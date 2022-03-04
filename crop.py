@@ -3,7 +3,7 @@ import os
 import numpy as np
 
 count=0
-if not os.path.exists('./cropped_images'):
+if not os.path.exists('/Users/jaisurajbantupalli/Desktop/Automated-Attendance-System-By-Real-Time-Face-Recognition//cropped_images'):
     os.makedirs('./cropped_images')
 
 for path, subdirnames, filenames in os.walk("dataset"):
@@ -18,7 +18,7 @@ for path, subdirnames, filenames in os.walk("dataset"):
                     continue
                 print(path,filename)
                 #img_path=os.path.join(path, filename)#fetching image path
-                img_path = f'dataset\{str(dir)}\{filename}'
+                img_path = f'dataset/{str(dir)}/{filename}'
                 print("img_path",img_path)
 
                 facedata = "haarcascade_frontalface_default.xml"

@@ -19,7 +19,7 @@ for path, subdirnames, filenames in os.walk("dataset"):
                     continue
                 print(path,filename)
                 #img_path=os.path.join(path, filename)#fetching image path
-                img_path = f'dataset\{str(dir)}\{filename}'
+                img_path = f'dataset/{str(dir)}/{filename}'
                 print("img_path",img_path)
 
                 facedata = "haarcascade_frontalface_default.xml"
